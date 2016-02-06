@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <meta name="description" content="Questions related your tastes in ice cream">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <h1>A Survey Form</h1>
+    <h2>Input fields, radio buttons, checkboxes, comment fields, submit, reset buttons, menus, lists, upload files</h2>
+    <hr>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+    <!-- enctype attribute only neeed for input type="file" which was not covered in class!! -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="lastname">Last name: </label>
+            <input type="text" id="lastname" name="lastname">
+
+            <br><br>
+
+            <label for="firstname">First name: </label>
+            <input type="text" id="firstname" name="firstname">
+
+            <br><br>
+            <!-- new for HTML5 -->
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+            
+            <br><br>
+            <!-- new for HTML5 -->
+            <label for="tel">Telephone: </label>
+            <input type="tel" id="tel" name="tel" required placeholder="123-456-7890">
+            
+            <br><br>
+            <!-- new for HTML5 -->
+            <label for="date">Date: </label>
+            <input type="date" id="date" name="date">
+
+            <br><br>
+
+            <label for="zipcode">Zip Code: </label>
+            <input type="text" id="zipcode" name="zipcode" size="5" maxlength="5">
+
+            <br><br>
+
+            <label for="state">State: </label>
+            <select id="state" name="state">
+                <option value="blank">&nbsp;</option>
+                <optgroup label="Western States">
+                    <option value="CA">California</option>
+                    <option value="WA">Washington</option>
+                    <option value="OR">Oregon</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="NV">Nevada</option>
+                </optgroup>
+                <optgroup label="Eastern States">
+                    <option value="NY">New York</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="VT">Vermont</option>
+                    <option value="ME">Maine</option>
+                    <option value="RI">Rhode Island</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <label for="state2">State: </label>
+            <select id="state2" name="state2">
+                <option value="blank">&nbsp;</option>
+                <optgroup label="Western States">
+                    <option value="CA">California</option>
+                    <option value="WA">Washington</option>
+                    <option value="OR">Oregon</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="NV">Nevada</option>
+                </optgroup>
+                <optgroup label="Eastern States">
+                    <option value="NY">New York</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="VT">Vermont</option>
+                    <option value="ME">Maine</option>
+                    <option value="RI">Rhode Island</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <label for="states">Which States have you lived in: </label>
+            <select id="states" name="states" multiple>
+                <option value="blank">&nbsp;</option>
+                <optgroup label="Western States">
+                    <option value="CA">California</option>
+                    <option value="WA">Washington</option>
+                    <option value="OR">Oregon</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="NV">Nevada</option>
+                </optgroup>
+                <optgroup label="Eastern States">
+                    <option value="NY">New York</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="VT">Vermont</option>
+                    <option value="ME">Maine</option>
+                    <option value="RI">Rhode Island</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Information</legend>
+            Gender: <br>
+            <label><input type="radio" name="gender" value="male">Male</label><br>
+            <label><input type="radio" name="gender" value="female">Female</label>
+            <br><br>
+            Ice cream: <br>
+            <label><input type="checkbox" name="icecream" value="Chocolate">Chocolate</label><br>
+            <label><input type="checkbox" name="icecream" value="Vanilla">Vanilla</label>
+            <br><br>
+            <br><br>
+            <label for="comment">Comments</label>
+            <textarea id="comment" name="comment" cols="50" rows="10"></textarea>
+        </fieldset>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear this form now!">
+    </form>
+</body>
+</html>

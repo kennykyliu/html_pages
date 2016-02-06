@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Image mapping</title>
+    <meta name="description" content="creating hot spot areas on an image">
+    <meat name="keywords" content="image mapping, ">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <h1>Image Mapping</h1>
+    <h2>Creating Hot Spots!</h2>
+    <hr>
+    <img src="images/USMap.jpg" alt="US Map" usemap="#mymap">
+    <map name="mymap">
+        <area shape="rect" coords="162,50,208,78" href="index.html" alt="go home" title="Go back to home page">
+        <area shape="circle" coords="333,99,50" href="index.html" alt="Return home" title="Return home">
+        <area shape="poly" coords="27,62,52,68,47,96,77,140,70, 158,54,155,37,133,25,97,22,78" href="index.html" alt="HOme page" title="Home page">
+    </map>
+</body>
+</html>

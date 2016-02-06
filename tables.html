@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A page of tables</title>
+    <meta name="description" content="Creating tables using table, rows, table data, table headers, merging rows and columns, captions">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <h1>A page of Tables</h1>
+    <h2>Tables with Rows, Columns and Captions</h2>
+    <hr>
+    <table>
+        <tr>
+            <td>Table Data - What the user sees</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Table with border</h3>
+    <table border="1">
+        <tr>
+            <td>Table Data - What the user sees</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Table with multiple Rows</h3>
+    <table border="1">
+        <tr>
+            <td>Table Data - What the user sees</td>
+        </tr>
+        <tr>
+            <td>Table Data - What the user sees</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- tr stands for table rows
+         td stands for table data - creates columns -->
+    <h3>Table with multiple Column</h3>
+    <table border="1">
+        <tr>
+            <td>Country</td>
+            <td>State</td>
+            <td>County</td>
+            <td>City</td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>California</td>
+            <td>Santa Clara</td>
+            <td>San Jose!</td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>California</td>
+            <td>Santa Cruz</td>
+            <td>Aptos</td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>Washington</td>
+            <td>Seattle</td>
+            <td>Tacoma</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!-- tr stands for table rows
+         td stands for table data - creates columns -->
+    <h3>Table with multiple Columns</h3>
+    <table border="1">
+        <tr>
+            <th>Country</th>
+            <th>State</th>
+            <th>County</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <th>USA</th>
+            <td>California</td>
+            <td>Santa Clara</td>
+            <td>San Joséé!</td>
+        </tr>
+        <tr>
+            <th>USA</th>
+            <td>California</td>
+            <td>Santa Cruz</td>
+            <td>Aptos</td>
+        </tr>
+        <tr>
+            <th>USA</th>
+            <td>Washington</td>
+            <td>Seattle</td>
+            <td>Tacoma</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!-- tr stands for table rows
+         td stands for table data - creates columns -->
+    <h3>Table with merged Columns</h3>
+    <table border="1">
+        <tr>
+            <th colspan="4">Merged Column</th>
+        </tr>
+        <tr>
+            <th rowspan="2">USA (Merged Rows)</th>
+            <td>California</td>
+            <td>Santa Clara</td>
+            <td>San Joséé!</td>
+        </tr>
+        <tr>
+            <td>California</td>
+            <td>Santa Cruz</td>
+            <td>Aptos</td>
+        </tr>
+        <tr>
+            <th>USA</th>
+            <td>Washington</td>
+            <td>Seattle</td>
+            <td>Tacoma</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!-- tr stands for table rows
+         td stands for table data - creates columns -->
+    <h3>Table with a Caption</h3>
+    <table border="1" summary="names, emails and phone numbers">
+        <caption>This is the Table Caption</caption>
+        <tr>
+            <th colspan="4">Merged Column</th>
+        </tr>
+        <tr>
+            <th rowspan="2">USA (Merged Rows)</th>
+            <td>California</td>
+            <td>Santa Clara</td>
+            <td>San Joséé!</td>
+        </tr>
+        <tr>
+            <td>California</td>
+            <td>Santa Cruz</td>
+            <td>Aptos</td>
+        </tr>
+        <tr>
+            <th>USA</th>
+            <td>Washington</td>
+            <td>Seattle</td>
+            <td>Tacoma</td>
+        </tr>
+    </table>  
+
+    <hr>
+    <!-- tr stands for table rows
+         td stands for table data - creates columns -->
+    <h3>Table with a body, header and footer</h3>
+    <table border="1">
+        <caption>This is the Table Caption</caption>
+        <thead>
+            <tr>        
+                <th>Country</th>
+                <th>State</th>
+                <th>County</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4">Source from: Wikipedia</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3">USA (Merged Rows)</th>
+                <td>California</td>
+                <td>Santa Cruz</td>
+                <td>Aptos</td>
+            </tr>
+            <tr>
+                <td>California</td>
+                <td>Santa Clara</td>
+                <td>San José!</td>
+            </tr>
+            <tr>
+                <td>Washington</td>
+                <td>Seattle</td>
+                <td>Tacoma</td>
+            </tr>
+        </tbody>
+    </table>    
+</body>
+</html>
